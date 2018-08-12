@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kaká Stefane | Desenvolvedor Front-End</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <h1 class="header-brand"><a href="#home" title="Kaká Stefane">Kaká Stefane</a></h1>
+        <nav class="header-navigation">
+            <ul>
+                <li><a href="#about" title="Sobre Mim">Sobre Mim</a></li>
+                <li><a href="#portfolio" title="Portfólio">Portfólio</a></li>
+                <li><a href="#contact" title="Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <h1 class="home-title">Kaká Stefane</h1>
+        <h2 class="home-subtitle">Desenvolvedor Front-End</h2>
+        <a href="#about" title="Sobre Mim" class="home-button">Sobre Mim</a>
+    </section>
+    <!-- .home -->
+
+    <section class="about" id="about">
+        <h1 class="about-title">Sobre Mim</h1>
+        <p class="about-text">Olá, meu nome é <strong>Kariston Stefane da Silva</strong>, natural de Apucarana/PR, atualmente moro em São José, Santa Catarina, região metropolitana de Florianópolis.</p>
+        <p class="about-text">Sou <strong>Desenvolvedor Front-End</strong> e <strong>Designer de Interfaces</strong> de formação auto-didata, atualmente estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> na Estácio, porém além disso me mantenho sempre estudando e buscando mais conhecimento na área de desenvolvimento que é o que eu gosto.</p>
+    </section>
+    <!-- .about -->
+
+    <section class="skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <dl class="skill">
+            <dt class="skill-title">Front-End</dt>
+            <dd class="skill-description">Tenho conhecimento em HTML, CSS e Javascript. Utilizo também Frameworks como jQuery, Bootstrap, para agilizar o desenvolvimento, e para controle de versão utilizo o Git.</dd>
+        </dl>
+        <dl class="skill">
+            <dt class="skill-title">Design</dt>
+            <dd class="skill-description">Me preocupo sempre com a experiência que o usuário terá nos projetos em que eu desenvolvo, busco sempre me atualizar e procurar ótimas referências para que cada projeto seja único.</dd>
+        </dl>
+    </section>
+    <!-- .skills -->
+
+    <section class="portfolio" id="portfolio">
+        <h1 class="portfolio-title">Portfólio</h1>
+        <ul class="portfolio-list">
+            <li class="portfolio-list-item">
+                <figure class="portfolio-image">
+                    <img src="./assets/images/bmw-thumb.png" alt="Interface de Usuário - Site BMW Top Car">
+                </figure>
+                <dl class="portfolio-text">
+                    <dt class="portfolio-text-title">BMW Top Car</dt>
+                    <dd class="portfolio-text-description">Para a BMW Top Car eu desenvolvi o Front-End do site. Este é um site Responsivo e foram utilizadas as tecnologias: HTML5, CSS3, JavaScript. O Back-End e o Design do site foram criados pela Agência NacionalVOX.</dd>
+                </dl>
+            </li>
+            <li class="portfolio-list-item reverse">
+                <figure class="portfolio-image">
+                    <img src="./assets/images/madic-thumb.png" alt="Interface de Usuário - Construtora Madic">
+                </figure>
+                <dl class="portfolio-text">
+                    <dt class="portfolio-text-title">Madic Construtora</dt>
+                    <dd class="portfolio-text-description">Neste projeto fiz desde o Design até o Back-End. No Front-End foram utilizadas as tecnologias: HTML5, CSS3, JavaScript. O Back-End foi feito por mim também, utilizando WordPress como CMS.</dd>
+                </dl>
+            </li>
+            <li class="portfolio-list-item">
+                <figure class="portfolio-image">
+                    <img src="./assets/images/milacoelho-thumb.png" alt="Interface de Usuário - Mila Coelho">
+                </figure>
+                <dl class="portfolio-text">
+                    <dt class="portfolio-text-title">Mila Coelho</dt>
+                    <dd class="portfolio-text-description">Para a Mila Coelho eu desenvolvi o Front-End da Loja Virtual. Esta é uma loja Responsiva e foram utilizadas as tecnologias: HTML5, CSS3, JavaScript. O Back-End e o Design do site foram criados pela Agência WEBI utilizando a plataforma de e-commerce PrestaShop.</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+    <!-- .portfolio -->
+
+    <section class="contact" id="contact">
+        <h1 class="contact-title">Entre em contato</h1>
+        <h2 class="contact-subtitle">Tem interesse em ter um site com design agradável, otimizado e que atenda o máximo de dispositivos diferentes possíveis?</h2>
+        <form action="" class="contact-form">
+            <input type="text" name="your-name" placeholder="Como deseja ser chamado?" required>
+            <input type="email" name="your-email" placeholder="Para qual e-mail posso responder?" required>
+            <textarea name="your-message" placeholder="Qual sua dúvida? Digite aqui sua mensagem." required></textarea>
+            <button>Enviar</button>
+        </form>
+    </section>
+    <!-- .contact -->
+
+    <script>
+        var header = document.getElementById('header');
+        var headerHeight = header.offsetHeight;
+        var homeHeight = document.getElementById('home').offsetHeight;
+        window.onscroll = function changeClass() {
+            var scrollPosY = window.pageYOffset | document.body.scrollTop;
+            if ( scrollPosY > homeHeight - headerHeight - 30 ) {
+                header.className = ('header scrolled');
+            } else if ( scrollPosY <= homeHeight - headerHeight - 30 ) {
+                header.className =  ('header');
+            }
+        }
+    </script>
+</body>
+</html>
