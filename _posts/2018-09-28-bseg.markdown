@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Grupo BSEG"
+date:   2018-09-28 10:17:10 -0300
+categories: [Desenvolvimento]
+thumb: "/images/portfolio/bseg-thumb.jpg"
+image: "/images/portfolio/bseg-full.jpg"
+---
+Desenvolvimento de site para Agência WEBI, utilizando WordPress como CMS.
+Este é um site Responsivo e foram utilizadas as tecnologias: HTML5, CSS3, javascript; E o framework css: Bootstrap.
+O Design do site foi criado pela Agência WEBI.

@@ -1,2 +1,1 @@
-# kakastefane.github.io
-My personal portfolio
+# minimalblog.github.io

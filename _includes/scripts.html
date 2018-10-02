@@ -1,0 +1,13 @@
+<script src="./js/jquery.js"></script>
+<script src="./js/smooth-scroll.js"></script>
+<script>
+	$('a').butterScroll({
+        scroll  : 500,
+        toplink : true
+    });
+
+    $('.label-hamburguer').click(function(){
+    	$('.label-hamburguer').toggleClass('ativo');
+    	$('.side').toggleClass('ativo');
+    });
+</script>
